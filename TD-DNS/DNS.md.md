@@ -29,7 +29,9 @@
 
 L'adresse ip du host `wiki.lab.local` est : 192.168.33.21
 
+### Connectez vous au host auth-1, quels sont les services réseaux qui sont en fonctionnement actuellement quels sont leur socket d'écoute ?
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM2MTQ0MDc3MF19
+eyJoaXN0b3J5IjpbLTM0MzIxNDEzNF19
 -->
