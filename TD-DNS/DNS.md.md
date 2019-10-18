@@ -6,26 +6,30 @@
 
 ### Retrouvez l'adresse ip du host `wiki.lab.local` avec la commande dig.
 
-vagrant@proxy:~$ dig wiki.lab.local
+    vagrant@proxy:~$ dig wiki.lab.local
+    
+    ; <<>> DiG 9.10.3-P4-Debian <<>> wiki.lab.local
+    ;; global options: +cmd
+    ;; Got answer:
+    ;; ->>HEADER<<- opcode: QUERY, status: NXDOMAIN, id: 45077
+    ;; flags: qr rd ra; QUERY: 1, ANSWER: 0, AUTHORITY: 1, ADDITIONAL: 1
+    
+    ;; OPT PSEUDOSECTION:
+    ; EDNS: version: 0, flags:; udp: 4096
+    ;; QUESTION SECTION:
+    ;wiki.lab.local.                        IN      A
+    
+    ;; AUTHORITY SECTION:
+    lab.local.              3600    IN      SOA     ns1.lab.local. hostmaster.lab.local. 2018050122 28800 7200 604800 86400
+    
+    ;; Query time: 15 msec
+    ;; SERVER: 192.168.33.21#53(192.168.33.21)
+    ;; WHEN: Fri Oct 18 09:29:33 GMT 2019
+    ;; MSG SIZE  rcvd: 94
 
-; <<>> DiG 9.10.3-P4-Debian <<>> wiki.lab.local
-;; global options: +cmd
-;; Got answer:
-;; ->>HEADER<<- opcode: QUERY, status: NXDOMAIN, id: 45077
-;; flags: qr rd ra; QUERY: 1, ANSWER: 0, AUTHORITY: 1, ADDITIONAL: 1
+L'adresse ip du host `wiki.lab.local` est : 192.168.33.21
 
-;; OPT PSEUDOSECTION:
-; EDNS: version: 0, flags:; udp: 4096
-;; QUESTION SECTION:
-;wiki.lab.local.                        IN      A
 
-;; AUTHORITY SECTION:
-lab.local.              3600    IN      SOA     ns1.lab.local. hostmaster.lab.local. 2018050122 28800 7200 604800 86400
-
-;; Query time: 15 msec
-;; SERVER: 192.168.33.21#53(192.168.33.21)
-;; WHEN: Fri Oct 18 09:29:33 GMT 2019
-;; MSG SIZE  rcvd: 94
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1ODE4OTQ5NzhdfQ==
+eyJoaXN0b3J5IjpbLTM2MTQ0MDc3MF19
 -->
