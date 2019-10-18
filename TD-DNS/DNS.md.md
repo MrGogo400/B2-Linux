@@ -43,6 +43,21 @@ L'adresse ip du host `wiki.lab.local` est : 192.168.33.21
 
 
 ### Connectez vous au host recursor-1, quels sont les services réseaux qui sont en fonctionnement actuellement quels sont leur socket d'écoute ?
+
+    [vagrant@recursor-1 ~]$ sudo netstat -ltnp
+    Active Internet connections (only servers)
+    Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name
+    tcp        0      0 0.0.0.0:111             0.0.0.0:*               LISTEN      1/systemd
+    tcp        0      0 192.168.33.21:53        0.0.0.0:*               LISTEN      5958/pdns_recursor
+    tcp        0      0 127.0.0.1:53            0.0.0.0:*               LISTEN      5958/pdns_recursor
+    tcp        0      0 0.0.0.0:22              0.0.0.0:*               LISTEN      2389/sshd
+    tcp        0      0 127.0.0.1:25            0.0.0.0:*               LISTEN      2742/master
+    tcp6       0      0 :::111                  :::*                    LISTEN      1/systemd
+    tcp6       0      0 :::22                   :::*                    LISTEN      2389/sshd
+    tcp6       0      0 ::1:25                  :::*                    LISTEN      2742/master
+
+
+### Où sont configuré chacuns de ces composants ?
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NTUzMDIzNjUsLTM0MzIxNDEzNF19
+eyJoaXN0b3J5IjpbMzM1MjEyNTkzLC0zNDMyMTQxMzRdfQ==
 -->
