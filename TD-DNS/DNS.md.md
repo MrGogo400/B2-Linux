@@ -31,15 +31,18 @@ L'adresse ip du host `wiki.lab.local` est : 192.168.33.21
 
 ### Connectez vous au host auth-1, quels sont les services réseaux qui sont en fonctionnement actuellement quels sont leur socket d'écoute ?
 
-[vagrant@auth-1 ~]$ sudo netstat -ltnp
-Active Internet connections (only servers)
-Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name
-tcp        0      0 0.0.0.0:111             0.0.0.0:*               LISTEN      1/systemd
-tcp        0      0 0.0.0.0:22              0.0.0.0:*               LISTEN      2384/sshd
-tcp        0      0 127.0.0.1:25            0.0.0.0:*               LISTEN      2751/master
-tcp6       0      0 :::111                  :::*                    LISTEN      1/systemd
-tcp6       0      0 :::22                   :::*                    LISTEN      2384/sshd
-tcp6       0      0 ::1:25                  :::*                    LISTEN      2751/master
+    [vagrant@auth-1 ~]$ sudo netstat -ltnp
+    Active Internet connections (only servers)
+    Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name
+    tcp        0      0 0.0.0.0:111             0.0.0.0:*               LISTEN      1/systemd
+    tcp        0      0 0.0.0.0:22              0.0.0.0:*               LISTEN      2384/sshd
+    tcp        0      0 127.0.0.1:25            0.0.0.0:*               LISTEN      2751/master
+    tcp6       0      0 :::111                  :::*                    LISTEN      1/systemd
+    tcp6       0      0 :::22                   :::*                    LISTEN      2384/sshd
+    tcp6       0      0 ::1:25                  :::*                    LISTEN      2751/master
+
+
+### Connectez vous au host recursor-1, quels sont les services réseaux qui sont en fonctionnement actuellement quels sont leur socket d'écoute ?
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc3ODE0OTQzMiwtMzQzMjE0MTM0XX0=
+eyJoaXN0b3J5IjpbLTE3NTUzMDIzNjUsLTM0MzIxNDEzNF19
 -->
